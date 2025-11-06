@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Панель администратора</title>
+    <style>
+        body { font-family: Arial; margin: 0; }
+        .sidebar { width: 250px; background: #2c3e50; color: white; height: 100vh; float: left; }
+        .content { margin-left: 260px; padding: 20px; }
+        .menu-btn { display: block; width: 100%; padding: 15px; background: #34495e; color: white; border: none; text-align: left; }
+        .menu-btn:hover { background: #1abc9c; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background: #f8f9fa; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3 style="padding: 20px;">Администратор</h3>
+        <button class="menu-btn">📋 Управление заказами</button>
+        <button class="menu-btn">👥 Клиенты</button>
+        <button class="menu-btn">📦 Склад материалов</button>
+        <button class="menu-btn">📊 Отчеты</button>
+    </div>
+
+    <div class="content">
+        <h1>Панель управления ателье</h1>
+        
+        <h3>Текущие заказы:</h3>
+        <table>
+            <tr><th>№</th><th>Клиент</th><th>Услуга</th><th>Статус</th></tr>
+            <tr><td>001</td><td>Иванов А.</td><td>Пошив костюма</td><td>В работе</td></tr>
+            <tr><td>002</td><td>Петрова С.</td><td>Ремонт платья</td><td>Готов</td></tr>
+        </table>
+    </div>
+</body>
+</html>
